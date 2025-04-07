@@ -1,0 +1,26 @@
+const images = {
+  booking: "/src/assets/icons/booking.svg",
+  dashboard: "/src/assets/icons/dashboard.svg",
+  earning: "/src/assets/icons/earning.svg",
+  notification: "/src/assets/icons/notification.svg",
+  rating: "/src/assets/icons/rating.svg",
+  riderManagement: "/src/assets/icons/rider_managment.svg",
+  setting: "/src/assets/icons/setting.svg",
+  statement: "/src/assets/icons/statement.svg",
+  support: "/src/assets/icons/support.svg",
+  tracking: "/src/assets/icons/tracking.svg",
+  userManagement: "/src/assets/icons/user_management.svg",
+  admin: "/src/assets/images/admin.png",
+  logo: '/src/assets/images/logo.png',
+  gym: '/src/assets/images/gym.syg',
+  market: "/src/assets/images/market.svg",
+  love: '/src/assets/images/love.svg',
+  social: "/src/assets/images/social.svg",
+  ads: "/src/assets/images/ads.svg",
+  verification: "/src/assets/images/verification.svg",
+  subcription: "/src/assets/images/subcription.svg",
+  transaction: "/src/assets/images/transaction.svg",
+  report: "/src/assets/images/report.svg",
+};
+
+export default images;
