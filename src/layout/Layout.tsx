@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar";
 import { Outlet } from "react-router-dom";
 import Profile from "./components/Profile";
-import { TopbarProfileLeft } from "../constants/topbarProfile";
-import Agents from "./components/Agents";
 
 const Layout: React.FC = () => {
-  const [sidebarOpen, setSidebarOpen] = useState<boolean>(true);
+  // const [sidebarOpen, setSidebarOpen] = useState<boolean>(true);
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex bg-theme-light">
+    <div className="flex bg-white">
       {/* Sidebar */}
       <div
         className={`fixed lg:static top-0 left-0 z-20 transition-transform transform ${
@@ -22,7 +20,7 @@ const Layout: React.FC = () => {
       {/* Main Content */}
       <div className="w-full h-screen overflow-auto transition-all duration-300">
         <div>
-          <div className="min-h-[72px] sticky top-0 z-[100] flex justify-between items-center px-4 md:px-8 py-2 border-[#093826] bg-theme-light">
+          <div className="min-h-[72px] sticky top-0 z-[100] flex justify-between items-center px-4 md:px-8 py-2  border-b border-gray-200 bg-white">
             <div className="flex items-center gap-2">
               <button
                 className="block lg:hidden"
