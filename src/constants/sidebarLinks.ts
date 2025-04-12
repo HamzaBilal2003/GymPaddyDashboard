@@ -8,6 +8,29 @@ export const Sidebar_links = [
     sublinks: [],
   },
  {
+  name: 'User Managment',
+  link: '/user/management',
+  icon: images.user,
+  sublinks: [
+    {
+      name: "social",
+      link: "/social",
+    },
+    {
+      name: "connect",
+      link: "/connect",
+    },
+    {
+      name: "Market",
+      link: "/market",
+    },
+    {
+      name: "Gym Hub",
+      link: "/gymhub",
+    },
+  ],
+ },
+ {
   name: 'Transactions',
   link: '/transaction',
   icon: images.transaction,
@@ -71,6 +94,12 @@ export const Sidebar_links = [
     name: "Support",
     link: "/support",
     icon: images.support,
+    sublinks: [],
+  },
+  {
+    name: "notification",
+    link: "/notification",
+    icon: images.Bell,
     sublinks: [],
   },
   {

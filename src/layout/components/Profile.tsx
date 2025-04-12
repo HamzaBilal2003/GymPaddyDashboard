@@ -6,12 +6,12 @@ interface ProfileProps {
   img?: string;
 }
 
-const Profile: React.FC<ProfileProps> = ({ name = "Admin", img = images.admin }) => {
+const Profile: React.FC<ProfileProps> = ({ name = "Howdy", img = images.admin }) => {
   return (
     <div className="flex items-center gap-4 ">
       <div>
-        <h4 className="text-lg ">Hey,</h4>
-        <h2 className="text-xl">{name}</h2>
+        {/* <h4 className="text-lg ">Hey,</h4> */}
+        <h2 className="text-lg">{name},Admin</h2>
       </div>
       <img src={img} alt="profile" className="w-14 h-14 rounded-md" />
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import LinkComp from "./components/Link";
 import { Sidebar_links } from "../constants/sidebarLinks";
 import images from "../constants/images";
@@ -18,12 +18,7 @@ const Sidebar: React.FC<SidebarProps> = ({ setMobileOpen }) => {
 
     return (
         <div
-            className={`h-screen overflow-auto transition-all duration-300 ${menuOpen ? "w-[80px]" : "w-[300px]"} bg-white text-white`}
-            style={{
-                // Adjusting scrollbar styling
-                scrollbarWidth: "thin",
-                scrollbarColor: "#D3D3D3 #000000",
-            }}
+            className={`h-screen overflow-auto transition-all duration-300 ${menuOpen ? "w-[80px]" : "w-[300px]"} bg-theme-light text-black`}
         >
             {/* Mobile Close Button */}
             <div className="flex justify-end lg:hidden p-4">
@@ -36,12 +31,12 @@ const Sidebar: React.FC<SidebarProps> = ({ setMobileOpen }) => {
             </div>
 
             {/* Sidebar Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-700">
+            <div className="flex items-center justify-between px-6 py-4 h-[72px]">
                 {/* <Link to="/dashboard">
                     <h1 className="text-xl font-bold">Fast Logistics</h1>
                 </Link> */}
 
-                    <img src={images.logo} alt="Logo" />
+                <img src={images.logo} alt="Logo" className="size-14 object-contain" />
                 {/* Toggle Menu Icon */}
                 {menuOpen && (
                     <div
@@ -73,7 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({ setMobileOpen }) => {
             </nav>
 
             {/* Logout Button */}
-            <div className="p-4 border-t-2 border-[#093826] mt-4 flex items-center justify-center">
+            <div className="p-4 mt-4 flex items-center justify-center">
                 <button className="flex items-center justify-center p-2 gap-2 text-[#FF0000] font-bold rounded-lg w-full border border-[#F70F0F]">
                     <i className="bi bi-box-arrow-left text-2xl"></i>
                     {!menuOpen && <span>Logout</span>}
