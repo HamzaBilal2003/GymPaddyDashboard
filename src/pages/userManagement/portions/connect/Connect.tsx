@@ -4,7 +4,7 @@ import HeaderWrapper from '../../components/HeaderWrapper';
 import UserConnectProfile from './components/UserConnectProfile';
 import FilterTab from '../../../../components/FilterTab';
 import Matches from './portions/Matches';
-import { LivePostData, matchesTableData, StatusPostData, supportTickets } from '../../../../constants/Data';
+import {  matchesTableData,  supportTickets } from '../../../../constants/Data';
 import ConnectMatch from './portions/ConnectMatch';
 
 const userData = {

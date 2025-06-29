@@ -7,7 +7,6 @@ import { bulkFilter, dates } from '../../../../../constants/FiltersData';
 import SearchFilter from '../../../../../components/SearchFilter';
 import TableCan from '../../../../../components/TableCan';
 import {  LivePostHeaders } from '../../../../../constants/Data';
-import StatusPostRow from '../components/StatusPostRow';
 import LivePostRow from '../components/LivePostRow';
 
 interface props {

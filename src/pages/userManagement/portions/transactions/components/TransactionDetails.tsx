@@ -5,8 +5,8 @@ interface TransactionDetailsProps {
   transaction: {
     id: string;
     amount: string;
-    status: 'success' | 'failed' | 'pending';
-    type: 'topup' | 'withdrawal';
+    status: string;
+    type: string;
     date: string;
     description?: string;
     accountDetails?: {

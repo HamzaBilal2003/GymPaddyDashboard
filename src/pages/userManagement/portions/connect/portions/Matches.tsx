@@ -16,7 +16,7 @@ const Matches: React.FC<Props> = ({ data }) => {
   const [selectedDate, setSelectedDate] = useState<string>('all');
 
   const filteredData = useMemo(() => {
-    return data.filter(item => {
+    return data.filter((item :any) => {
       const itemDate = dayjs(item.date, 'DD/MM/YY - hh:mm A'); // ✅ format must match your date string
 
       const today = dayjs();

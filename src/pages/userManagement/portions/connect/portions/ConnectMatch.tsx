@@ -5,7 +5,6 @@ import Dropdown from "../../../../../components/Dropdown";
 import { bulkFilter, dates } from "../../../../../constants/FiltersData";
 import TableCan from "../../../../../components/TableCan";
 import SupportRow from "../../../../support/components/SupportRow";
-import { supportTickets } from "../../../../../constants/Data";
 const getDaysDifference = (dateStr: string) => {
     const now = new Date();
     const givenDate = new Date(dateStr);

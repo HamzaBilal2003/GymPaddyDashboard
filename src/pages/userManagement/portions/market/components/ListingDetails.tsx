@@ -1,7 +1,5 @@
 import React from 'react';
 import { X } from 'lucide-react';
-import Modal from '../../../../../components/Modal';
-
 interface ListingDetailsProps {
   data: any;
   onClose: () => void;

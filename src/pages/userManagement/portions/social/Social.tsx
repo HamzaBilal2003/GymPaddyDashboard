@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom';
 import HeaderWrapper from '../../components/HeaderWrapper';
-import { allAnalytic, LivePostData, StatusPostData, UserPostData, UserSocialStats } from '../../../../constants/Data';
+import {  LivePostData, StatusPostData, UserPostData, UserSocialStats } from '../../../../constants/Data';
 import StatsCard from '../../../../components/StatsCard';
 import FilterTab from '../../../../components/FilterTab';
 import PostPortion from './Portions/PostPortion';

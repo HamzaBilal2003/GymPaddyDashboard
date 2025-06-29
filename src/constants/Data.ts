@@ -209,13 +209,13 @@ export const latestUsers = [
 
 
 
-export interface User {
+export interface UserData {
     profile_picture?: string;
     username: string;
 }
 
 export interface NotificationProps {
-    user: User;
+    user: UserData;
     title: string;
     message: string;
     type: string;
@@ -557,7 +557,7 @@ export const mockNotifications = [
 
 export interface SupportTableRow {
     id: string;
-    user: User;
+    user: UserData;
     message: string;
     created_at: string;
     status: string;

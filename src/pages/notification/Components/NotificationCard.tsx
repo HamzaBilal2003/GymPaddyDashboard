@@ -5,7 +5,6 @@ import { dummyImage } from '../../../constants/help';
 
 const NotificationCard: React.FC<NotificationProps> = ({
   user,
-  title,
   message,
   type,
   time,
